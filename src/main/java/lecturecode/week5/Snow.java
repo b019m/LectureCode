@@ -9,15 +9,18 @@ public class Snow {
         // create hashmap to store the snowfall data
          Map<String, Double> snowfall = new HashMap<>();
 
-         // adds th data for different months
+         // adds the snowfall data for different months
          snowfall.put("January", 3.1);
          snowfall.put("February", 10.8);
          snowfall.put("December", 3.1);
 
+         // print the snowfall data for all months
          System.out.println(snowfall);
 
+         // update the snowfall data for february
          snowfall.put("February", 12.4);
 
+         // print the snowfall data for all months
          System.out.println(snowfall);
 
          // print snowfall for january
@@ -30,6 +33,11 @@ public class Snow {
              System.out.println("There was snow in July!");
          }else{
              System.out.println("There was no snow in July");
+
+             /* Hashmap is a data structure that stores key value pairs
+             - each element in a HashMap consists of a key and its corresponding pairs
+             -
+              */
 
          }
     }
