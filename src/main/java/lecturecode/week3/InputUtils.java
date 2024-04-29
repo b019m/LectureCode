@@ -19,5 +19,21 @@ public class InputUtils {
         return scanner.nextInt();
     }
 
-
+    public static int positiveIntInput(String prompt) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(prompt + ": ");
+        return scanner.nextInt();
+    }
+    public static double positiveDoubleInput(String prompt) {
+        Scanner scanner = new Scanner(System.in);
+        double value;
+        do {
+            System.out.print(prompt + ": ");
+            while (!(scanner.hasNextDouble() && (value = scanner.nextDouble()) > 0)) {
+                System.out.println("Please enter a valid positive double.");
+                scanner.next();
+            }
+        } while (false);
+        return value;
+    }
 }
