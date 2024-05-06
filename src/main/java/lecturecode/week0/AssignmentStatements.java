@@ -1,7 +1,8 @@
 package lecturecode.week0;
 
-import static lecturecode.week3.InputUtils.intInput;
-import static lecturecode.week3.InputUtils.stringInput;
+
+import static lecturecode.week0.Input.InputUtils.intInput;
+import static lecturecode.week0.Input.InputUtils.stringInput;
 
 public class AssignmentStatements {
     public static void main(String[] args) {
